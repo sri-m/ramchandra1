@@ -21,7 +21,8 @@ gem "paperclip"
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "devise"
 gem 'kaminari'  #per
-gem 'nokogiri'
+#gem 'nokogiri'
+#this is testing comment
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
