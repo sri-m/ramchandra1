@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @registraion_role.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @registraion_role.email %>
+</p>
+
+<%= link_to 'Edit', edit_registraion_role_path(@registraion_role) %> |
+<%= link_to 'Back', registraion_roles_path %>

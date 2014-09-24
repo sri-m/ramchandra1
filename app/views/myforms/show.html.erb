@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @myform.name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @myform.gender %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @myform.category %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @myform.email %>
+</p>
+
+<p>
+  <strong>Cell:</strong>
+  <%= @myform.cell %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @myform.address %>
+</p>
+
+<%= link_to 'Edit', edit_myform_path(@myform) %> |
+<%= link_to 'Back', myforms_path %>

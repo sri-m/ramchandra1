@@ -1,0 +1,35 @@
+<h1>Listing myforms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Category</th>
+      <th>Email</th>
+      <th>Cell</th>
+      <th>Address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @myforms.each do |myform| %>
+      <tr>
+        <td><%= myform.name %></td>
+        <td><%= myform.gender %></td>
+        <td><%= myform.category %></td>
+        <td><%= myform.email %></td>
+        <td><%= myform.cell %></td>
+        <td><%= myform.address %></td>
+        <td><%= link_to 'Show', myform %></td>
+        <td><%= link_to 'Edit', edit_myform_path(myform) %></td>
+        <td><%= link_to 'Destroy', myform, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Myform', new_myform_path %>

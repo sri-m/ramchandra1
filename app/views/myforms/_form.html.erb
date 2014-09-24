@@ -1,0 +1,14 @@
+<%= semantic_form_for @myform do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name, :required => true  %>
+    <%= f.input :gender, :as => :radio, :collection => [:Male, :Female] %>
+    <%= f.input :category, :as => :select, :collection => Contact.pluck(:name).uniq %>
+    <%= f.input :email %>
+    <%= f.input :cell, :label => "Phone", :hint => "Something" %>
+    <%= f.input :address %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
